@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube dos Brindes 🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎉 Clube dos Brindes</h1>
+            <p class="description">
+                Cadastre-se agora e receba em sua casa itens revolucionários como:
+                <strong>um garfo perfurado para tomar sopa</strong>, 
+                <strong>um protetor de tela impresso em folha A4</strong> ou 
+                <strong>uma pedra de estimação com manual de instruções</strong>!
+            </p>
+        </header>
+
+        <form id="useless-form">
+            <div class="form-group">
+                <label for="nome">Nome Completo (ou seu codinome secreto):</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Bob Esponja" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone (para ligarmos 25 vezes ao dia):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail (para lotar de promoções inúteis):</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@inutil.com" required>
+            </div>
+
+            <div class="form-group fake-sensitive">
+                <label for="cartao">Número do Cartão :</label>
+                <input type="text" id="cartao" name="cartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
+            </div>
+
+            <div class="form-group fake-sensitive">
+                <label for="senha">Senha do Cartão:</label>
+                <input type="password" id="senha" name="senha" placeholder="••••••" maxlength="4" required>
+            </div>
+
+            <button type="submit" id="btn-submit">Garantir Meu Brinde Inútil 🚀</button>
+        </form>
+
+        <div id="funny-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>🎁 Parabéns! (Ou não...)</h2>
+                <p id="modal-message"></p>
+                <button id="close-modal">Fechar e ir rir um pouco</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
